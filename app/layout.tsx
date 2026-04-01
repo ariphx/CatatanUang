@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Catatan Uang | Kelola Keuangan Pribadi",
+  manifest: "/manifest.json",
+  themeColor: "#0ea5e9",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   description: "Catat pengeluaran harian dengan mudah dan elegan",
 };
 
