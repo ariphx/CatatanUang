@@ -5,10 +5,6 @@ import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { motion, AnimatePresence } from "framer-motion";
 
-export const metadata: Metadata = {
-  title: "Masuk - Catatan Uang",
-};
-
 export default function Login() {
   const router = useRouter();
 

@@ -5,10 +5,6 @@ import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { motion, AnimatePresence, useSpring, useTransform, Variants } from "framer-motion";
 
-export const metadata: Metadata = {
-  title: "Dashboard - Catatan Uang",
-};
-
 // --- KOMPONEN ANIMASI ANGKA ---
 const AnimatedNumber = ({ value }: { value: number }) => {
   const spring = useSpring(0, { bounce: 0, duration: 1500 });
