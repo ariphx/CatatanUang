@@ -20,15 +20,15 @@ const AnimatedNumber = ({ value }: { value: number }) => {
 };
 
 // --- VARIANTS UNTUK LIST MUNCUL BERURUTAN ---
-const containerVariants: Variants = {
+const containerVariants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: { staggerChildren: 0.1 }
   }
-};
+} as const;
 
-const itemVariants: Variants = {
+const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   show: { 
     opacity: 1, 
@@ -39,7 +39,7 @@ const itemVariants: Variants = {
       damping: 24 
     } 
   }
-};
+} as const;
 
 export default function Home() {
   const router = useRouter();
